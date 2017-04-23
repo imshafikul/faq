@@ -1,0 +1,71 @@
+/*
+========================
+Jquery Faq Slider
+Author : Shyafikul Islam
+========================
+*/
+
+body {
+    margin: 0px;
+}
+
+
+ul.faq {
+    padding: 0px;
+    margin: 0px auto;
+    max-width: 720px;
+}
+ul.faq li {
+    list-style: none;
+}
+
+ul.faq li.q {
+    cursor: pointer;
+    padding: 10px 40px 10px 10px;
+    background: rgba(221, 221, 221, 0.44);
+    font-weight: bold;
+}
+
+ul.faq li+li.q {
+    margin-top: 10px;
+}
+
+li.q {
+    position: relative;
+
+}
+
+li.q p {
+    margin: 0px;
+        color: #444444;
+}
+
+li.q i {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    font-size: 32px;
+    font-family: 'ProximaNova-Semibold';
+    line-height: 20px;
+    height: 20px;
+    right: 10px;
+    font-weight: normal;
+    -webkit-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+}
+
+li.q i:before {
+    content: "\002b"; 
+}
+
+li.q i.active:before {
+    content: "\2212"; 
+}
+
+ul.faq li.a {
+    display: none;
+    margin: 7px 10px 7px 0px;
+    padding: 0px 0px 0px 7px;
+    border-left: 3px solid rgba(221, 221, 221, 0.44);
+}
+
